@@ -1,0 +1,72 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "2018-05-08T16:58:04Z",
+    "title": "v1-serverless-secured-api"
+  },
+  "host": "ibdz3dtogk.execute-api.us-east-1.amazonaws.com",
+  "basePath": "/v1",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/alarm/test": {
+      "get": {
+        "responses": {}
+      }
+    },
+    "/alexa/api": {
+      "post": {
+        "responses": {},
+        "security": [
+          {
+            "1_GUFWfhI7g": []
+          }
+        ]
+      }
+    },
+    "/google/api": {
+      "post": {
+        "responses": {}
+      }
+    },
+    "/google/token": {
+      "post": {
+        "responses": {}
+      }
+    },
+    "/ifttt/v1/actions/change_setpoint": {
+      "post": {
+        "responses": {}
+      }
+    },
+    "/ifttt/v1/actions/change_setpoint/fields/device/options": {
+      "post": {
+        "responses": {}
+      }
+    },
+    "/ifttt/v1/status": {
+      "get": {
+        "responses": {}
+      }
+    },
+    "/ifttt/v1/test/setup": {
+      "post": {
+        "responses": {}
+      }
+    },
+    "/ifttt/v1/user/info": {
+      "get": {
+        "responses": {}
+      }
+    }
+  },
+  "securityDefinitions": {
+    "1_GUFWfhI7g": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "x-amazon-apigateway-authtype": "cognito_user_pools"
+    }
+  }
+}

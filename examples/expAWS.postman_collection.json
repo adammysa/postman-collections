@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "0dd9f6df-9a1f-4ecd-861f-1b9121d2cc1a",
+		"name": "AWS experiments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AWS Production Get",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJraWQiOiJmNXZQN2crZWhuYjRQUCs5MGkxV1ZzblVOZmNjUVpWUmVCbWFSdnJIZ2EwPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI1MDRmYmFjYS03MWQ1LTQ2NTQtYmY5Ni0wYmNjMzBkZTdhZjciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNTI2OTk5MDEyLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9HVUZXZmhJN2ciLCJleHAiOjE1MjcwMDI2MTIsImlhdCI6MTUyNjk5OTAxMiwidmVyc2lvbiI6MiwianRpIjoiOGI2YzdkYWItNmY3OC00NzU1LWE4YzItZTcxZDZhN2IxMWZkIiwiY2xpZW50X2lkIjoiMTJ1N3VyZmNqZWdmbXNiMGk4MzY0a2JlcXMiLCJ1c2VybmFtZSI6ImFkYW1AZ2V0bXlzYS5jb20ifQ.eZSTd6YSv9ltOuodVHPYaGbgXzfykFu-XyH047I42X477bPqo3i5k779kUeK88oX3akvRIl4Ne3C6ByoRXjQZ4EPptvXFQYSaW_UFZEf3G6u6SgNtrc6H0mWbxrJAmTR8AiB-HQmxoof-gcIB7-OHrMPPTmX3fwt6o5bEqMfM0MwIlDXb4z6ER4C2Dy5dKLDTfpxwEeEBJKy-lsFOKq6MINd6qvSZbgG9clri4rBXwvQ52uwzF_ahQA2o0YTqaefy7dCskRszjdhVhlgjn3XRQCre3KKhicPisvS-2YgaC0flOEpkVaRl4DuGSH4vWvikxtONxoUQn79iYVAnojBhQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://c97gikkr6l.execute-api.us-east-1.amazonaws.com/v1p1/readingsForUser",
+					"protocol": "https",
+					"host": [
+						"c97gikkr6l",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1p1",
+						"readingsForUser"
+					]
+				},
+				"description": "AWS Production Get Test 1"
+			},
+			"response": []
+		},
+		{
+			"name": "https://ibdz3dtogk.execute-api.us-east-1.amazonaws.com/v1/ifttt/v1/status",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJraWQiOiJmNXZQN2crZWhuYjRQUCs5MGkxV1ZzblVOZmNjUVpWUmVCbWFSdnJIZ2EwPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI1MDRmYmFjYS03MWQ1LTQ2NTQtYmY5Ni0wYmNjMzBkZTdhZjciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6Im9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNTI2OTk5MDEyLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9HVUZXZmhJN2ciLCJleHAiOjE1MjcwMDI2MTIsImlhdCI6MTUyNjk5OTAxMiwidmVyc2lvbiI6MiwianRpIjoiOGI2YzdkYWItNmY3OC00NzU1LWE4YzItZTcxZDZhN2IxMWZkIiwiY2xpZW50X2lkIjoiMTJ1N3VyZmNqZWdmbXNiMGk4MzY0a2JlcXMiLCJ1c2VybmFtZSI6ImFkYW1AZ2V0bXlzYS5jb20ifQ.eZSTd6YSv9ltOuodVHPYaGbgXzfykFu-XyH047I42X477bPqo3i5k779kUeK88oX3akvRIl4Ne3C6ByoRXjQZ4EPptvXFQYSaW_UFZEf3G6u6SgNtrc6H0mWbxrJAmTR8AiB-HQmxoof-gcIB7-OHrMPPTmX3fwt6o5bEqMfM0MwIlDXb4z6ER4C2Dy5dKLDTfpxwEeEBJKy-lsFOKq6MINd6qvSZbgG9clri4rBXwvQ52uwzF_ahQA2o0YTqaefy7dCskRszjdhVhlgjn3XRQCre3KKhicPisvS-2YgaC0flOEpkVaRl4DuGSH4vWvikxtONxoUQn79iYVAnojBhQ",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://ibdz3dtogk.execute-api.us-east-1.amazonaws.com/v1/ifttt/v1/status",
+					"protocol": "https",
+					"host": [
+						"ibdz3dtogk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"ifttt",
+						"v1",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "8ff17a81-42ed-4f02-8e36-52f47ca18b98",
+		"name": "No Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AWS Production Get No Auth",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "cf2ea945-76fe-424c-b759-2065805371c2",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "eyJraWQiOiJmNXZQN2crZWhuYjRQUCs5MGkxV1ZzblVOZmNjUVpWUmVCbWFSdnJIZ2EwPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI1MDRmYmFjYS03MWQ1LTQ2NTQtYmY5Ni0wYmNjMzBkZTdhZjciLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIG9wZW5pZCBwcm9maWxlIGVtYWlsIiwiYXV0aF90aW1lIjoxNTI3MDAzNjI1LCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtZWFzdC0xLmFtYXpvbmF3cy5jb21cL3VzLWVhc3QtMV9HVUZXZmhJN2ciLCJleHAiOjE1MjcwMDcyMjUsImlhdCI6MTUyNzAwMzYyNSwidmVyc2lvbiI6MiwianRpIjoiMjc5NDYwZjQtMjEwNi00MWNlLTk4Y2UtMjNmZDljYzNhYmJkIiwiY2xpZW50X2lkIjoiMTJ1N3VyZmNqZWdmbXNiMGk4MzY0a2JlcXMiLCJ1c2VybmFtZSI6ImFkYW1AZ2V0bXlzYS5jb20ifQ.eWE0u5BE_dYQ4as-JnNZSR7ceBXcP-o-v30opvdgyhg-QY_3BLZwBiekubFBeTcFqWmQlOslDVfQ2mnlFRvNjTMPc2D2zZE6t6uojJVqL21zo8UUAmyjfVWnhmPVbgyU9if-jCDkpwgiJd3BMBNTOoBHRt1Ac-voaI09iyZDwpXOxz0ZV65cMT1m11KsJOiRORP1t4g8h0PAxEoglYgkgs-mRrGotuM-dRW2MvT7GXO8anEdYkDfCCAmQrbwmiAsKtg0MwUdjKo-Solgb5Cwqvz6o3uvn265nzKj0E__LPbdZ7jza9f7lPNwYyvAE5nC1xHNdxsx2P8hzLRzkVlGqA",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "https://ibdz3dtogk.execute-api.us-east-1.amazonaws.com/v1/ifttt/v1/user/info",
+					"protocol": "https",
+					"host": [
+						"ibdz3dtogk",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"v1",
+						"ifttt",
+						"v1",
+						"user",
+						"info"
+					]
+				},
+				"description": "AWS Production Get Test 1"
+			},
+			"response": []
+		}
+	]
+}
